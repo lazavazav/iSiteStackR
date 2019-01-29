@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>iSiteStack</title>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="public/index.processed.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+   <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/litera/bootstrap.min.css" rel="stylesheet" integrity="sha384-DkdUb51XC4VPExQljj9mtMYspLBzNJscXpAnuo0rcJcLd7aeOH3jnz6cS1v8OFMW" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+   <a class="navbar-brand" href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1891105/SiteStack%20Logo.jpg" width="220" height="100" class="d-inline-block align-top" alt=""></a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#samples">Samples</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#cost">Cost</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled text-dark" href="#" tabindex="-1" aria-disabled="true">Web Development Services</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+ {{msg}}
+  <div id="home" class="section"><p>You deserve an affordable, professional and contemporary website for your business or personal needs.</p>
+  </div>
+    
+  <div id="samples" class="section">
+   
+          <a href="https://codepen.io/lazav/live/zLYpEV" id= "sample1" class="samplesites">
+       <div class="thumb">
+     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1891105/cherry%20pie.jpg" alt='cafe' height="200" width= "250" id="cafe">
+       <div class="text">Terrie's Cherries</div>
+         </div>
+           </a>
+    
+           <a href="https://leslieslessons.com" id= "sample2" class="samplesites">
+         <div class="thumb">
+      <img src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1891105/acoustic-background-band-306175.jpg" alt="musicsite" height="200" width= "250">
+         <div class="text">Music Lessons</div>
+           </div>
+            </a>
+         
+            <a href= "https://codepen.io/lazav/live/EpZRPK" id="sample3" class="samplesites">
+          <div class="thumb">
+       <img src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1891105/sew%20crafty.jpg" alt="craftsite" height="200" width= "250">
+          <div class="text">Sew Crafty</div>
+            </div>
+             </a>
+    </div>
+  <p><a href="#top" class="goTop"><i class="fas fa-arrow-alt-circle-up"></i></a></p>
+       
+  <div id="cost" class="section"><p>I charge $35 per hour with a $250 initial retainer. A typical website for a small business or for personal use will take about 6-8 hours to complete once I have everything I need from the client such as images, text content and the basic outline of functions. Most often, clients want me to host their site for them and keep it secure and maintained. This cost is an additional amount between $5-25 per month depending on the need for extra server space or security. For further questions or to get your new website, contact me below.</p>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1891105/profile.jpg" alt="profile" height= "100" width="100" class="profile">
+</div>
+  <p><a href="#top" class="goTop"><i class="fas fa-arrow-alt-circle-up"></i></a></p>
+    
+  <div id="contact" class="section">
+   
+      <a href= "https://github.com/lazavazav"> 
+    <img src= "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1891105/GitHub-Mark-64px.png" id= "githubicon"  height= "60px" width= "60px" alt="github icon">    
+      </a>
+
+      <a href= "https://codepen.io/lazav">
+    <img src= "https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" height= "60px" width= "60px" id="codepenIcon" alt="codepen icon">
+      </a>
+  </div>
+    <form method="POST" action="send">
+       <h3>Contact Me</h3>
+       {{msg}}
+       <div class="form-group">
+    <label for="name">Your Name</label>
+    <input type="text" class="form-control" name="name" id="formName" placeholder="Full Name">
+  </div>
+      <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" name="email" id="formEmail" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <input type="text-area" class="form-control" name="message" id="formMessage" placeholder="How can I help?">
+  </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  
+<ul id="footer" class="section">   
+  <li class="foot"><a href="#home">Home</a></li>
+  <li class="foot"><a href="#samples">Samples</a></li>
+  <li class="foot"><a href="#cost">Cost</a></li>
+  <li class="foot"><a href="#contact">Contact</a></li>
+ </ul>
+  <p><a href="#top" class="goTop"><i class="fas fa-arrow-alt-circle-up"></i></a></p>
+  <h3 class="llc">iSiteStack LLC</h3>
+  <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="public/index.js"></script>
+    
+  <script>    
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    
+</body>
+</html>

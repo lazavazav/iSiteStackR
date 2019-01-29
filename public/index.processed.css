@@ -1,0 +1,148 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  background: #f5f5f5;
+  overflow-y: scroll;
+  font-family: 'Lora', serif;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-left-color: #0992ef;
+}
+
+#home {
+  padding-top: 10px;
+  font-family: 'Wendy One', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+}
+
+form {
+  /*just to center the contact form on page*/
+  margin: 0 auto;
+  width: 75%;
+  background-color: #ccd6e8;
+  padding: 20px;
+}
+
+.thumb {
+  position: relative;
+  height: 200px;
+  width: 250px;
+  border: solid 1px #CCC;
+  -moz-box-shadow: 3px 3px 5px #999;
+  -webkit-box-shadow: 3px 3px 5px #999;
+  box-shadow: 3px 3px 5px #999;
+}
+
+.text {
+  position: absolute;
+  right: 0;
+  left: 15px;
+  top: 20px;
+  bottom: 0;
+  text-align: center;
+  color: white;
+  font: Lora, sans serif;
+  font-size: 50px;
+  font-style: bold;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.thumb:hover .text {
+  opacity: 1;
+}
+
+.profile {
+  border: solid 1px #CCC;
+  -moz-box-shadow: 3px 3px 5px #999;
+  -webkit-box-shadow: 3px 3px 5px #999;
+  box-shadow: 3px 3px 5px #999;
+  border-radius: 50%;
+}
+
+.foot a {
+  font-family: Lora, sans serif;
+  color: #474c56;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.foot {
+  display: inline-block;
+  margin: 10px;
+  list-style-type: none;
+}
+
+.llc {
+  font-family: 'Wendy One', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #home {
+    padding-top: 10px;
+    font-family: 'Wendy One', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
+  }
+  form {
+    /*just to center the contact form on page*/
+    margin: 0 auto;
+    width: 50%;
+    background-color: #ccd6e8;
+  }
+}
+
+@media (min-width: 992px) {
+  #home {
+    padding-top: 30px;
+    font-family: 'Wendy One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.6;
+  }
+  #cost {
+    font-family: Lora, sans serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
+  }
+  .goTop {
+    background: none;
+    margin: 0;
+    position: fixed;
+    bottom: 20px;
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    z-index: 100;
+    display: none;
+    text-decoration: none;
+    color: #e6ebf4;
+    background-color: #4a6fbf;
+  }
+  .goTop i {
+    font-size: 40px;
+  }
+}
