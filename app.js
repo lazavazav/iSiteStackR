@@ -66,4 +66,6 @@ app.post('/send', (req, res) => {
     
 });
 
-app.listen(3000, () => console.log('server started....'));
+
+const port = process.envPORT || 3000;
+app.listen(port, () => console.log(`Server started on port ${port}`));
