@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 //routes
 app.get('/', (req, res) => {
-    res.render('contact');
+    res.render('contact', {layout: false});
 });
 
 app.post('/send', (req, res) => {
